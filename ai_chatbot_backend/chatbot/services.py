@@ -21,7 +21,7 @@ class ChatBotService:
             self.llm = ChatOpenAI(
                 model = self.config['model'],
                 temperature = self.config['temperature'],
-                api_key = os.getenv("OPENAI_API_KEY"),
+                api_key = os.getenv("AICREDITS_API_KEY"),
                 base_url="https://api.aicredits.in/v1",
                 max_tokens = self.config.get('max_tokens' ,1000),
                 
